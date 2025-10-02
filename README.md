@@ -5,3 +5,4 @@ It works with FlyWithLua so if you aren't sure about what that is, maybe do some
 All you do (i think) is to download the file and place it:
 directory/of/your/xplane/resources/plugins/flywithlua/scripts 
 
+I hope this is helpful! I haven't found much resources online about this so i hope this works for you (i did for me at least)

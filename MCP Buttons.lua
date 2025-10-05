@@ -146,7 +146,7 @@ DataRef("TOGA", "anim/149/button", "writable")
 function toga() 
 if TOGA == 0 then
 set("anim/149/button", 1)
-elseif APPR ~= 0 then
+elseif TOGA ~= 0 then
 set("anim/149/button", 0)
 end
 end
@@ -162,4 +162,13 @@ set("anim/33/switch", 0)
 end
 end
 create_command("FlyWithLua/Autopilot/ATA", "A/T Arm switch", "ata()", "","")
+
+-- ALT SEL numerical value +1
+DataRef("ASNP", "T7Avionics/ap/alt_act", "writable")
+function asnp()
+ASNP = ASNP + 1
+set("T7Avionics/ap/alt_act", ASNP)
+end
+create_command("FlyWithLua/Autopilot/ASNP", "ALT SEL +", "asnp()", "", "")
+
 

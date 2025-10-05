@@ -166,9 +166,10 @@ create_command("FlyWithLua/Autopilot/ATA", "A/T Arm switch", "ata()", "","")
 -- ALT SEL numerical value +1
 DataRef("ASNP", "T7Avionics/ap/alt_act", "writable")
 function asnp()
-ASNP = ASNP + 1
+ASNP = ASNP + 1000
 set("T7Avionics/ap/alt_act", ASNP)
 end
 create_command("FlyWithLua/Autopilot/ASNP", "ALT SEL +", "asnp()", "", "")
+
 
 
